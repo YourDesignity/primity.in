@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact — Primity R&D Labs | Start a Project</title>
+  <meta name="description" content="Ready to build something great? Reach out to Primity R&D Labs. We respond within 24 hours."/>
+  <link rel="canonical" href="https://designity.in/contact"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,700;0,900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <style>
+    .contact-page{min-height:100vh;background:#f5f5f3;color:#0a0a0a;padding:8rem 4rem 5rem;overflow:hidden;}
+    @media(max-width:768px){.contact-page{padding:8rem 1.5rem 4rem;}}
+    .contact-header{margin-bottom:4rem;}
+    .contact-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4em;color:#aaa;margin-bottom:1.5rem;}
+    .contact-h1{font-size:clamp(3.5rem,9vw,8rem);font-weight:900;letter-spacing:-.04em;line-height:.9;}
+    .contact-h1 em{font-style:italic;font-weight:300;color:#a0a0a0;}
+    .contact-grid{display:flex;gap:4rem 6rem;align-items:flex-start;flex-wrap:wrap-reverse;}
+    .contact-form-wrap{flex:1;min-width:280px;display:flex;flex-direction:column;gap:2.5rem;}
+    .form-btns{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-top:1rem;}
+    /* INFO CARD */
+    .info-card{width:100%;max-width:480px;background:#0c0c0e;border-radius:2.5rem;padding:3.5rem;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:3rem;box-shadow:0 25px 80px rgba(0,0,0,.3);flex-shrink:0;}
+    .info-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);}
+    .info-card-glow{position:absolute;bottom:-10%;right:-10%;width:50%;height:50%;background:#e33324;opacity:.08;filter:blur(80px);border-radius:50%;}
+    .info-section{}
+    .info-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:rgba(255,255,255,.3);margin-bottom:.75rem;}
+    .info-section a,.info-section p{display:block;font-size:clamp(.875rem,1.5vw,1.25rem);font-weight:500;color:#fff;transition:color .3s;margin-bottom:.5rem;}
+    .info-section a:hover{color:#bbb;}
+    .info-divider{border-top:1px solid rgba(255,255,255,.1);padding-top:2rem;}
+    .info-location{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.6);line-height:1.8;}
+    .open-tags{display:flex;flex-wrap:wrap;gap:.5rem;}
+    .open-tag{padding:.375rem .75rem;border-radius:999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:rgba(255,255,255,.5);}
+  </style>
+</head>
+<body>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div><div class="noise-overlay"></div>
+  <nav class="main-nav">
+    <a href="../index.html" class="nav-logo">Primity R&amp;D Labs<span class="dot">.</span></a>
+    <div class="nav-pill"><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="contact.html" class="nav-cta active">Let's Talk</a></div>
+    <button class="ham-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu"><nav><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="contact.html" class="cta active">Let's Talk</a></nav><div class="menu-footer"><p>Primity R&amp;D Labs · Kerala, India</p><a href="mailto:reachoutprimity@gmail.com">reachoutprimity@gmail.com</a></div></div>
+
+  <main><div class="contact-page">
+
+    <div class="contact-header reveal">
+      <p class="contact-label">Start a Project</p>
+      <h1 class="contact-h1">Let's create<br><em>together.</em></h1>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <form class="contact-form-wrap reveal" id="contact-form" data-key="YOUR_WEB3FORMS_KEY_HERE">
+        <div class="form-group">
+          <label for="name">What's your name?</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required/>
+        </div>
+        <div class="form-group">
+          <label for="email">What's your email?</label>
+          <input type="email" id="email" name="email" placeholder="john@company.com" required/>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your project</label>
+          <textarea id="message" name="message" rows="3" placeholder="Hello Primity R&amp;D Labs, I want to collaborate on..." required></textarea>
+        </div>
+        <div class="form-btns">
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">Send Message</span>
+            <div class="spinner-wrap"><div class="spinner"></div></div>
+          </button>
+          <span id="form-status"></span>
+        </div>
+      </form>
+
+      <!-- INFO CARD -->
+      <div class="info-card reveal">
+        <div class="info-card-glow"></div>
+        <div class="info-section">
+          <p class="info-label">Primity R&amp;D Labs Studio</p>
+          <a href="mailto:reachoutprimity@gmail.com?subject=Project%20Inquiry">reachoutprimity@gmail.com</a>
+        </div>
+        <div class="info-section">
+          <p class="info-label">Direct Lines</p>
+          <a href="tel:+919895867769">+91 9895867769</a>
+          <a href="tel:+919207354765">+91 9207354765</a>
+        </div>
+        <div class="info-section info-divider">
+          <p class="info-label">Location</p>
+          <p class="info-location">Sreekrishnapuram [PO], Palakkad,<br>Kerala, India.</p>
+        </div>
+        <div class="info-section">
+          <p class="info-label">We are open for</p>
+          <div class="open-tags">
+            <span class="open-tag">Collaboration</span>
+            <span class="open-tag">Startup Partnerships</span>
+            <span class="open-tag">Freelance Projects</span>
+            <span class="open-tag">Product Development</span>
+            <span class="open-tag">AI Pilot Runs</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div></main>
+
+  <footer class="site-footer"><div class="footer-top"><div><h2 class="footer-name">PRIMITY R&amp;D LABS<span class="dot">.</span></h2><p class="footer-tagline">First in Ideas. Prime in Execution. Always.</p></div><div class="footer-contact"><a href="mailto:reachoutprimity@gmail.com">reachoutprimity@gmail.com</a><p>Kerala, India</p></div></div><div class="footer-bottom"><p class="footer-copy">© <span class="js-year"></span> PRIMITY R&amp;D LABS. All Rights Reserved.</p><div class="footer-social"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Twitter</a></div></div></footer>
+  <script src="../assets/js/main.js"></script>
+</body></html>

@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2e"/>
+      <stop offset="100%" stop-color="#0a1520"/>
+    </linearGradient>
+    <linearGradient id="bluebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="tealbar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="greenbar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="sidebarbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#071020"/>
+      <stop offset="100%" stop-color="#091525"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="220" height="900" fill="url(#sidebarbg)"/>
+  <rect x="220" y="0" width="1" height="900" fill="#1e3a5f" opacity="0.6"/>
+
+  <!-- Logo area -->
+  <rect x="20" y="25" width="180" height="50" rx="10" fill="#0f2040"/>
+  <rect x="35" y="38" width="10" height="10" rx="2" fill="#2563eb"/>
+  <rect x="35" y="52" width="10" height="4" rx="2" fill="#2563eb" opacity="0.5"/>
+  <text x="55" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">ERP</text>
+  <text x="55" y="65" font-family="Arial, sans-serif" font-size="9" fill="#4a8fa0" letter-spacing="2">ENTERPRISE</text>
+
+  <!-- Nav items -->
+  <rect x="15" y="100" width="190" height="36" rx="8" fill="#2563eb" opacity="0.2"/>
+  <rect x="22" y="110" width="8" height="8" rx="2" fill="#2563eb"/>
+  <text x="40" y="122" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa" font-weight="600">Dashboard</text>
+
+  <rect x="22" y="152" width="8" height="8" rx="2" fill="#334"/>
+  <text x="40" y="163" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">HR Management</text>
+
+  <rect x="22" y="178" width="8" height="8" rx="2" fill="#334"/>
+  <text x="40" y="189" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">Payroll</text>
+
+  <rect x="22" y="204" width="8" height="8" rx="2" fill="#334"/>
+  <text x="40" y="215" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">Projects</text>
+
+  <rect x="22" y="230" width="8" height="8" rx="2" fill="#334"/>
+  <text x="40" y="241" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">Analytics</text>
+
+  <rect x="22" y="256" width="8" height="8" rx="2" fill="#334"/>
+  <text x="40" y="267" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">Finance</text>
+
+  <rect x="22" y="282" width="8" height="8" rx="2" fill="#334"/>
+  <text x="40" y="293" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">Reports</text>
+
+  <rect x="22" y="308" width="8" height="8" rx="2" fill="#334"/>
+  <text x="40" y="319" font-family="Arial, sans-serif" font-size="12" fill="#4a5568">Settings</text>
+
+  <!-- Status at bottom of sidebar -->
+  <rect x="15" y="820" width="190" height="60" rx="10" fill="#0f2040"/>
+  <circle cx="38" cy="850" r="14" fill="#1e3a5f"/>
+  <text x="38" y="855" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#60a5fa" text-anchor="middle">MK</text>
+  <text x="60" y="846" font-family="Arial, sans-serif" font-size="11" fill="#ffffff">Muhammed K.</text>
+  <text x="60" y="862" font-family="Arial, sans-serif" font-size="9" fill="#4a8fa0">Admin · Online</text>
+
+  <!-- Top header bar -->
+  <rect x="220" y="0" width="980" height="60" fill="#091828"/>
+  <rect x="220" y="59" width="980" height="1" fill="#1e3a5f" opacity="0.5"/>
+  <text x="260" y="25" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">MONTREAL INTERNATIONAL</text>
+  <text x="260" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Operations Dashboard</text>
+  <rect x="980" y="15" width="120" height="30" rx="15" fill="#1e3a5f"/>
+  <circle cx="998" cy="30" r="5" fill="#22c55e"/>
+  <text x="1008" y="34" font-family="Arial, sans-serif" font-size="10" fill="#60a5fa">Live · Q2 2024</text>
+
+  <!-- ── KPI CARDS ROW ── -->
+  <!-- Card 1 -->
+  <rect x="240" y="80" width="215" height="110" rx="12" fill="#0f2040"/>
+  <rect x="240" y="80" width="215" height="4" rx="2" fill="#2563eb"/>
+  <text x="260" y="107" font-family="Arial, sans-serif" font-size="10" fill="#4a8fa0" letter-spacing="1">ACTIVE PROJECTS</text>
+  <text x="260" y="148" font-family="Arial, sans-serif" font-size="40" font-weight="900" fill="#ffffff">24</text>
+  <text x="260" y="172" font-family="Arial, sans-serif" font-size="10" fill="#22c55e">↑ 4 this month</text>
+
+  <!-- Card 2 -->
+  <rect x="472" y="80" width="215" height="110" rx="12" fill="#0f2040"/>
+  <rect x="472" y="80" width="215" height="4" rx="2" fill="#0891b2"/>
+  <text x="492" y="107" font-family="Arial, sans-serif" font-size="10" fill="#4a8fa0" letter-spacing="1">TOTAL WORKFORCE</text>
+  <text x="492" y="148" font-family="Arial, sans-serif" font-size="40" font-weight="900" fill="#ffffff">1,847</text>
+  <text x="492" y="172" font-family="Arial, sans-serif" font-size="10" fill="#60a5fa">94% utilization</text>
+
+  <!-- Card 3 -->
+  <rect x="704" y="80" width="215" height="110" rx="12" fill="#0f2040"/>
+  <rect x="704" y="80" width="215" height="4" rx="2" fill="#16a34a"/>
+  <text x="724" y="107" font-family="Arial, sans-serif" font-size="10" fill="#4a8fa0" letter-spacing="1">CONTRACT VALUE</text>
+  <text x="724" y="148" font-family="Arial, sans-serif" font-size="38" font-weight="900" fill="#ffffff">$4.2M</text>
+  <text x="724" y="172" font-family="Arial, sans-serif" font-size="10" fill="#22c55e">↑ 23% vs last Q</text>
+
+  <!-- Card 4 -->
+  <rect x="936" y="80" width="224" height="110" rx="12" fill="#0f2040"/>
+  <rect x="936" y="80" width="224" height="4" rx="2" fill="#e33324"/>
+  <text x="956" y="107" font-family="Arial, sans-serif" font-size="10" fill="#4a8fa0" letter-spacing="1">ALERTS</text>
+  <text x="956" y="148" font-family="Arial, sans-serif" font-size="40" font-weight="900" fill="#f87171">3</text>
+  <text x="956" y="172" font-family="Arial, sans-serif" font-size="10" fill="#f87171">2 contracts expiring</text>
+
+  <!-- ── MAIN AREA ROW ── -->
+  <!-- Revenue Chart -->
+  <rect x="240" y="212" width="540" height="260" rx="12" fill="#0f2040"/>
+  <text x="262" y="238" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Revenue vs Costs — 2024</text>
+  <text x="262" y="255" font-family="Arial, sans-serif" font-size="10" fill="#4a8fa0">Monthly Financial Overview</text>
+
+  <!-- Chart bars — Revenue (blue) -->
+  <rect x="275" y="420" width="30" height="30" rx="4" fill="#2563eb" opacity="0.8"/>
+  <rect x="315" y="390" width="30" height="60" rx="4" fill="#2563eb" opacity="0.8"/>
+  <rect x="355" y="370" width="30" height="80" rx="4" fill="#2563eb" opacity="0.85"/>
+  <rect x="395" y="350" width="30" height="100" rx="4" fill="#2563eb" opacity="0.85"/>
+  <rect x="435" y="330" width="30" height="120" rx="4" fill="#2563eb" opacity="0.9"/>
+  <rect x="475" y="310" width="30" height="140" rx="4" fill="#2563eb" opacity="0.9"/>
+  <rect x="515" y="300" width="30" height="150" rx="4" fill="#2563eb"/>
+  <rect x="555" y="285" width="30" height="165" rx="4" fill="#2563eb"/>
+  <rect x="595" y="295" width="30" height="155" rx="4" fill="#2563eb"/>
+  <rect x="635" y="275" width="30" height="175" rx="4" fill="#2563eb"/>
+  <rect x="675" y="260" width="30" height="190" rx="4" fill="#2563eb"/>
+  <rect x="715" y="265" width="30" height="185" rx="4" fill="#2563eb"/>
+
+  <!-- Chart bars — Costs (teal, overlay) -->
+  <rect x="275" y="435" width="30" height="15" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="315" y="418" width="30" height="32" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="355" y="405" width="30" height="45" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="395" y="390" width="30" height="60" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="435" y="375" width="30" height="75" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="475" y="360" width="30" height="90" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="515" y="350" width="30" height="100" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="555" y="338" width="30" height="112" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="595" y="345" width="30" height="105" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="635" y="330" width="30" height="120" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="675" y="318" width="30" height="132" rx="3" fill="#0891b2" opacity="0.7"/>
+  <rect x="715" y="322" width="30" height="128" rx="3" fill="#0891b2" opacity="0.7"/>
+
+  <!-- X axis labels -->
+  <text x="280" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Jan</text>
+  <text x="320" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Feb</text>
+  <text x="360" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Mar</text>
+  <text x="400" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Apr</text>
+  <text x="440" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">May</text>
+  <text x="480" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Jun</text>
+  <text x="520" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Jul</text>
+  <text x="560" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Aug</text>
+  <text x="600" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Sep</text>
+  <text x="640" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Oct</text>
+  <text x="680" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Nov</text>
+  <text x="720" y="468" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">Dec</text>
+
+  <!-- Legend -->
+  <rect x="262" y="273" width="10" height="10" rx="2" fill="#2563eb"/>
+  <text x="276" y="282" font-family="Arial, sans-serif" font-size="9" fill="#a0aec0">Revenue</text>
+  <rect x="330" y="273" width="10" height="10" rx="2" fill="#0891b2"/>
+  <text x="344" y="282" font-family="Arial, sans-serif" font-size="9" fill="#a0aec0">Costs</text>
+
+  <!-- Projects List panel -->
+  <rect x="797" y="212" width="363" height="260" rx="12" fill="#0f2040"/>
+  <text x="818" y="238" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Active Projects</text>
+  <text x="1080" y="238" font-family="Arial, sans-serif" font-size="10" fill="#2563eb" text-anchor="end">View All →</text>
+
+  <!-- Project rows -->
+  <line x1="818" y1="252" x2="1148" y2="252" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- Header -->
+  <text x="818" y="268" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" letter-spacing="1">PROJECT</text>
+  <text x="970" y="268" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" letter-spacing="1">SITE</text>
+  <text x="1060" y="268" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" letter-spacing="1">WORKERS</text>
+  <text x="1140" y="268" font-family="Arial, sans-serif" font-size="9" fill="#4a5568" text-anchor="end" letter-spacing="1">STATUS</text>
+  <line x1="818" y1="274" x2="1148" y2="274" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <rect x="818" y="278" width="4" height="24" rx="2" fill="#2563eb"/>
+  <text x="830" y="291" font-family="Arial, sans-serif" font-size="11" fill="#e2e8f0">Al Zour Refinery</text>
+  <text x="830" y="303" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Kuwait · Phase 3</text>
+  <text x="970" y="294" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0">Kuwait City</text>
+  <text x="1078" y="294" font-family="Arial, sans-serif" font-size="11" fill="#60a5fa">342</text>
+  <rect x="1110" y="283" width="32" height="16" rx="8" fill="#16a34a" opacity="0.25"/>
+  <text x="1126" y="295" font-family="Arial, sans-serif" font-size="9" fill="#4ade80" text-anchor="middle">Active</text>
+  <line x1="818" y1="310" x2="1148" y2="310" stroke="#1e3a5f" stroke-width="0.5"/>
+
+  <!-- Row 2 -->
+  <rect x="818" y="314" width="4" height="24" rx="2" fill="#0891b2"/>
+  <text x="830" y="327" font-family="Arial, sans-serif" font-size="11" fill="#e2e8f0">Marina Tower Fit-out</text>
+  <text x="830" y="339" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">UAE · Interior</text>
+  <text x="970" y="330" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0">Abu Dhabi</text>
+  <text x="1078" y="330" font-family="Arial, sans-serif" font-size="11" fill="#60a5fa">218</text>
+  <rect x="1110" y="319" width="32" height="16" rx="8" fill="#16a34a" opacity="0.25"/>
+  <text x="1126" y="331" font-family="Arial, sans-serif" font-size="9" fill="#4ade80" text-anchor="middle">Active</text>
+  <line x1="818" y1="346" x2="1148" y2="346" stroke="#1e3a5f" stroke-width="0.5"/>
+
+  <!-- Row 3 -->
+  <rect x="818" y="350" width="4" height="24" rx="2" fill="#e33324"/>
+  <text x="830" y="363" font-family="Arial, sans-serif" font-size="11" fill="#e2e8f0">KNPC Maintenance</text>
+  <text x="830" y="375" font-family="Arial, sans-serif" font-size="9" fill="#f87171">Contract expires in 12d</text>
+  <text x="970" y="366" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0">Ahmadi</text>
+  <text x="1078" y="366" font-family="Arial, sans-serif" font-size="11" fill="#60a5fa">156</text>
+  <rect x="1104" y="355" width="44" height="16" rx="8" fill="#e33324" opacity="0.2"/>
+  <text x="1126" y="367" font-family="Arial, sans-serif" font-size="9" fill="#f87171" text-anchor="middle">Expiring</text>
+  <line x1="818" y1="382" x2="1148" y2="382" stroke="#1e3a5f" stroke-width="0.5"/>
+
+  <!-- Row 4 -->
+  <rect x="818" y="386" width="4" height="24" rx="2" fill="#16a34a"/>
+  <text x="830" y="399" font-family="Arial, sans-serif" font-size="11" fill="#e2e8f0">Shuwaikh Port</text>
+  <text x="830" y="411" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Kuwait · Logistics</text>
+  <text x="970" y="402" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0">Kuwait City</text>
+  <text x="1078" y="402" font-family="Arial, sans-serif" font-size="11" fill="#60a5fa">289</text>
+  <rect x="1110" y="391" width="32" height="16" rx="8" fill="#16a34a" opacity="0.25"/>
+  <text x="1126" y="403" font-family="Arial, sans-serif" font-size="9" fill="#4ade80" text-anchor="middle">Active</text>
+  <line x1="818" y1="418" x2="1148" y2="418" stroke="#1e3a5f" stroke-width="0.5"/>
+
+  <!-- Row 5 -->
+  <rect x="818" y="422" width="4" height="24" rx="2" fill="#a78bfa"/>
+  <text x="830" y="435" font-family="Arial, sans-serif" font-size="11" fill="#e2e8f0">Doha Metro Ext.</text>
+  <text x="830" y="447" font-family="Arial, sans-serif" font-size="9" fill="#4a5568">Qatar · Civil</text>
+  <text x="970" y="438" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0">Doha</text>
+  <text x="1078" y="438" font-family="Arial, sans-serif" font-size="11" fill="#60a5fa">412</text>
+  <rect x="1110" y="427" width="32" height="16" rx="8" fill="#16a34a" opacity="0.25"/>
+  <text x="1126" y="439" font-family="Arial, sans-serif" font-size="9" fill="#4ade80" text-anchor="middle">Active</text>
+
+  <!-- ── BOTTOM ROW ── -->
+  <!-- HR Payroll summary -->
+  <rect x="240" y="492" width="360" height="200" rx="12" fill="#0f2040"/>
+  <text x="262" y="518" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Payroll Overview</text>
+  <text x="262" y="535" font-family="Arial, sans-serif" font-size="10" fill="#4a8fa0">June 2024</text>
+
+  <text x="262" y="565" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Total Disbursed</text>
+  <text x="580" y="565" font-family="Arial, sans-serif" font-size="10" fill="#60a5fa" text-anchor="end">KWD 284,500</text>
+  <line x1="262" y1="572" x2="580" y2="572" stroke="#1e3a5f" stroke-width="0.5"/>
+
+  <text x="262" y="590" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Overtime Paid</text>
+  <text x="580" y="590" font-family="Arial, sans-serif" font-size="10" fill="#60a5fa" text-anchor="end">KWD 18,240</text>
+  <line x1="262" y1="597" x2="580" y2="597" stroke="#1e3a5f" stroke-width="0.5"/>
+
+  <text x="262" y="615" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Deductions</text>
+  <text x="580" y="615" font-family="Arial, sans-serif" font-size="10" fill="#f87171" text-anchor="end">KWD 9,120</text>
+  <line x1="262" y1="622" x2="580" y2="622" stroke="#1e3a5f" stroke-width="0.5"/>
+
+  <text x="262" y="640" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Net Payroll</text>
+  <text x="580" y="640" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#4ade80" text-anchor="end">KWD 293,620</text>
+  <line x1="262" y1="648" x2="580" y2="648" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="262" y="672" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">Employees Paid</text>
+  <text x="580" y="672" font-family="Arial, sans-serif" font-size="10" fill="#e2e8f0" text-anchor="end">1,847 / 1,847</text>
+
+  <!-- Workforce utilization donut (simplified) -->
+  <rect x="617" y="492" width="260" height="200" rx="12" fill="#0f2040"/>
+  <text x="638" y="518" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Workforce Utilization</text>
+  <circle cx="748" cy="614" r="60" fill="none" stroke="#1e3a5f" stroke-width="18"/>
+  <circle cx="748" cy="614" r="60" fill="none" stroke="#2563eb" stroke-width="18" stroke-dasharray="355" stroke-dashoffset="0" stroke-linecap="round"/>
+  <circle cx="748" cy="614" r="60" fill="none" stroke="#16a34a" stroke-width="18" stroke-dasharray="335" stroke-dashoffset="-21" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="748" cy="614" r="60" fill="none" stroke="#0891b2" stroke-width="18" stroke-dasharray="310" stroke-dashoffset="-47" stroke-linecap="round" opacity="0.7"/>
+  <text x="748" y="608" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">94%</text>
+  <text x="748" y="628" font-family="Arial, sans-serif" font-size="9" fill="#4a8fa0" text-anchor="middle">Utilization</text>
+
+  <!-- Alerts panel -->
+  <rect x="894" y="492" width="266" height="200" rx="12" fill="#0f2040"/>
+  <text x="914" y="518" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">System Alerts</text>
+  <rect x="914" y="530" width="226" height="46" rx="8" fill="#1a0808"/>
+  <rect x="914" y="530" width="3" height="46" rx="1.5" fill="#e33324"/>
+  <text x="925" y="549" font-family="Arial, sans-serif" font-size="10" fill="#f87171" font-weight="600">KNPC Contract expires in 12 days</text>
+  <text x="925" y="565" font-family="Arial, sans-serif" font-size="9" fill="#a05050">Renewal approval required · KWD 420K</text>
+  <rect x="914" y="583" width="226" height="46" rx="8" fill="#1a0808"/>
+  <rect x="914" y="583" width="3" height="46" rx="1.5" fill="#f97316"/>
+  <text x="925" y="602" font-family="Arial, sans-serif" font-size="10" fill="#fb923c" font-weight="600">Workforce gap: Doha Metro Site B</text>
+  <text x="925" y="618" font-family="Arial, sans-serif" font-size="9" fill="#9a5a30">14 additional workers needed by Jul 1</text>
+  <rect x="914" y="636" width="226" height="40" rx="8" fill="#0d1f0d"/>
+  <rect x="914" y="636" width="3" height="40" rx="1.5" fill="#16a34a"/>
+  <text x="925" y="652" font-family="Arial, sans-serif" font-size="10" fill="#4ade80" font-weight="600">Payroll processed successfully</text>
+  <text x="925" y="667" font-family="Arial, sans-serif" font-size="9" fill="#3a7040">1,847 employees · June 2024</text>
+
+  <!-- Footer brand label -->
+  <rect x="0" y="760" width="1200" height="140" fill="#06101e"/>
+  <line x1="0" y1="760" x2="1200" y2="760" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="60" y="810" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#ffffff">ERP PLATFORM</text>
+  <text x="60" y="840" font-family="Arial, sans-serif" font-size="13" fill="#2563eb" letter-spacing="3">MONTREAL INTERNATIONAL · KUWAIT &amp; GCC</text>
+  <text x="60" y="862" font-family="Arial, sans-serif" font-size="11" fill="#2a4a6a">Enterprise Resource Planning · Payroll · HR · Project Management · Analytics</text>
+  <rect x="980" y="782" width="160" height="40" rx="20" fill="#2563eb" opacity="0.15"/>
+  <text x="1060" y="807" font-family="Arial, sans-serif" font-size="12" fill="#60a5fa" text-anchor="middle" font-weight="700">ERP SYSTEM</text>
+</svg>

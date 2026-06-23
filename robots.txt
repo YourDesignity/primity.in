@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://designity.in/sitemap.xml

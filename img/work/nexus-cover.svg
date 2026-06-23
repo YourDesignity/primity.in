@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="sitehero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#1c1c1c"/>
+    </linearGradient>
+    <linearGradient id="redaccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e33324"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="browsertop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#252525"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <!-- Browser shadow -->
+  <rect x="60" y="50" width="1080" height="720" rx="14" fill="#000" opacity="0.5"/>
+
+  <!-- Browser frame -->
+  <rect x="55" y="45" width="1080" height="720" rx="14" fill="url(#browsertop)" stroke="#3a3a3a" stroke-width="1"/>
+
+  <!-- Browser chrome bar -->
+  <rect x="55" y="45" width="1080" height="46" rx="14" fill="url(#browsertop)"/>
+  <rect x="55" y="73" width="1080" height="18" fill="url(#browsertop)"/>
+
+  <!-- Traffic lights -->
+  <circle cx="95" cy="68" r="7" fill="#ff5f57"/>
+  <circle cx="118" cy="68" r="7" fill="#febc2e"/>
+  <circle cx="141" cy="68" r="7" fill="#28c840"/>
+
+  <!-- URL bar -->
+  <rect x="280" y="56" width="620" height="24" rx="12" fill="#1a1a1a"/>
+  <circle cx="298" cy="68" r="5" fill="#3a3a3a"/>
+  <text x="600" y="73" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">kfab.in — Industrial Fabrication &amp; Heavy Engineering</text>
+
+  <!-- Refresh / forward buttons -->
+  <text x="958" y="73" font-family="Arial, sans-serif" font-size="14" fill="#555" text-anchor="middle">↻</text>
+  <text x="978" y="73" font-family="Arial, sans-serif" font-size="14" fill="#555" text-anchor="middle">⋮</text>
+
+  <!-- ── WEBSITE CONTENT ── -->
+  <!-- NAV -->
+  <rect x="55" y="91" width="1080" height="56" fill="#0a0a0a"/>
+  <line x1="55" y1="147" x2="1135" y2="147" stroke="#1e1e1e" stroke-width="1"/>
+
+  <!-- Logo -->
+  <rect x="90" y="108" width="50" height="22" rx="4" fill="#e33324"/>
+  <text x="115" y="123" font-family="Arial, sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">K-FAB</text>
+  <text x="155" y="118" font-family="Arial, sans-serif" font-size="8" fill="#555" letter-spacing="1">INDUSTRIAL</text>
+  <text x="155" y="130" font-family="Arial, sans-serif" font-size="8" fill="#555" letter-spacing="1">FABRICATION</text>
+
+  <text x="500" y="124" font-family="Arial, sans-serif" font-size="12" fill="#999">About</text>
+  <text x="580" y="124" font-family="Arial, sans-serif" font-size="12" fill="#999">Services</text>
+  <text x="660" y="124" font-family="Arial, sans-serif" font-size="12" fill="#999">Projects</text>
+  <text x="740" y="124" font-family="Arial, sans-serif" font-size="12" fill="#999">Capabilities</text>
+  <text x="840" y="124" font-family="Arial, sans-serif" font-size="12" fill="#999">Contact</text>
+  <rect x="970" y="108" width="130" height="28" rx="14" fill="#e33324"/>
+  <text x="1035" y="127" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">GET A QUOTE →</text>
+
+  <!-- HERO SECTION -->
+  <rect x="55" y="147" width="1080" height="320" fill="url(#sitehero)"/>
+  <!-- Abstract steel texture lines -->
+  <g stroke="#1a1a1a" stroke-width="1" opacity="0.6">
+    <line x1="55" y1="180" x2="1135" y2="180"/>
+    <line x1="55" y1="220" x2="1135" y2="220"/>
+    <line x1="55" y1="260" x2="1135" y2="260"/>
+    <line x1="55" y1="300" x2="1135" y2="300"/>
+    <line x1="55" y1="340" x2="1135" y2="340"/>
+    <line x1="55" y1="380" x2="1135" y2="380"/>
+    <line x1="55" y1="420" x2="1135" y2="420"/>
+  </g>
+  <!-- Red accent bar -->
+  <rect x="90" y="175" width="6" height="80" rx="3" fill="#e33324"/>
+  <!-- Hero text -->
+  <text x="115" y="210" font-family="Arial, sans-serif" font-size="11" fill="#e33324" letter-spacing="4" font-weight="700">PRECISION ENGINEERING</text>
+  <text x="115" y="258" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="#ffffff">Built to Last.</text>
+  <text x="115" y="310" font-family="Arial, sans-serif" font-size="30" font-weight="300" fill="#555">Engineered to Excel.</text>
+  <text x="115" y="355" font-family="Arial, sans-serif" font-size="14" fill="#666" style="max-width:500px">Industrial fabrication, structural steel, and heavy engineering for the GCC and global markets.</text>
+  <rect x="115" y="385" width="160" height="42" rx="21" fill="#e33324"/>
+  <text x="195" y="411" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">EXPLORE WORK</text>
+  <rect x="288" y="385" width="160" height="42" rx="21" fill="transparent" stroke="#333"/>
+  <text x="368" y="411" font-family="Arial, sans-serif" font-size="12" fill="#777" text-anchor="middle">OUR CAPABILITIES</text>
+
+  <!-- Hero right — stats -->
+  <rect x="750" y="165" width="380" height="290" rx="12" fill="#111" stroke="#222" stroke-width="1"/>
+  <rect x="750" y="165" width="380" height="4" rx="2" fill="#e33324"/>
+  <text x="770" y="193" font-family="Arial, sans-serif" font-size="10" fill="#555" letter-spacing="2">BY THE NUMBERS</text>
+  <line x1="770" y1="200" x2="1110" y2="200" stroke="#1e1e1e" stroke-width="1"/>
+  <!-- Stat grid -->
+  <text x="770" y="240" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#ffffff">25+</text>
+  <text x="770" y="258" font-family="Arial, sans-serif" font-size="10" fill="#555" letter-spacing="1">YEARS EXPERIENCE</text>
+  <text x="950" y="240" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#e33324">500+</text>
+  <text x="950" y="258" font-family="Arial, sans-serif" font-size="10" fill="#555" letter-spacing="1">PROJECTS COMPLETED</text>
+  <line x1="770" y1="272" x2="1110" y2="272" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="770" y="312" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#ffffff">18</text>
+  <text x="770" y="330" font-family="Arial, sans-serif" font-size="10" fill="#555" letter-spacing="1">GCC COUNTRIES SERVED</text>
+  <text x="950" y="312" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#ffffff">ISO</text>
+  <text x="950" y="330" font-family="Arial, sans-serif" font-size="10" fill="#555" letter-spacing="1">9001:2015 CERTIFIED</text>
+  <line x1="770" y1="344" x2="1110" y2="344" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="770" y="375" font-family="Arial, sans-serif" font-size="11" fill="#666">Structural Steel · Pressure Vessels</text>
+  <text x="770" y="393" font-family="Arial, sans-serif" font-size="11" fill="#666">Heat Exchangers · Piping · Tanks</text>
+  <text x="770" y="412" font-family="Arial, sans-serif" font-size="11" fill="#666">Modular Skids · Offshore Structures</text>
+  <text x="770" y="430" font-family="Arial, sans-serif" font-size="11" fill="#666">Heavy Lifting · Site Erection</text>
+
+  <!-- SERVICES SECTION -->
+  <rect x="55" y="467" width="1080" height="200" fill="#f5f5f3"/>
+  <text x="595" y="498" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0a0a0a" text-anchor="middle">Our Capabilities</text>
+  <text x="595" y="516" font-family="Arial, sans-serif" font-size="11" fill="#999" text-anchor="middle">End-to-end heavy engineering solutions</text>
+
+  <!-- Service cards -->
+  <rect x="75" y="530" width="195" height="120" rx="12" fill="#fff" stroke="#e5e5e5" stroke-width="1"/>
+  <rect x="75" y="530" width="195" height="4" rx="2" fill="#e33324"/>
+  <text x="172" y="572" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚙</text>
+  <text x="172" y="596" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#111" text-anchor="middle">Structural Steel</text>
+  <text x="172" y="613" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Fabrication &amp; Erection</text>
+
+  <rect x="284" y="530" width="195" height="120" rx="12" fill="#fff" stroke="#e5e5e5" stroke-width="1"/>
+  <rect x="284" y="530" width="195" height="4" rx="2" fill="#1d4ed8"/>
+  <text x="381" y="572" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🔩</text>
+  <text x="381" y="596" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#111" text-anchor="middle">Pressure Vessels</text>
+  <text x="381" y="613" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">ASME / PED Certified</text>
+
+  <rect x="493" y="530" width="195" height="120" rx="12" fill="#fff" stroke="#e5e5e5" stroke-width="1"/>
+  <rect x="493" y="530" width="195" height="4" rx="2" fill="#0891b2"/>
+  <text x="590" y="572" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🏗</text>
+  <text x="590" y="596" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#111" text-anchor="middle">Modular Skids</text>
+  <text x="590" y="613" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Process &amp; Utility</text>
+
+  <rect x="702" y="530" width="195" height="120" rx="12" fill="#fff" stroke="#e5e5e5" stroke-width="1"/>
+  <rect x="702" y="530" width="195" height="4" rx="2" fill="#16a34a"/>
+  <text x="799" y="572" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚡</text>
+  <text x="799" y="596" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#111" text-anchor="middle">Offshore Structures</text>
+  <text x="799" y="613" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Platforms &amp; Jackets</text>
+
+  <rect x="911" y="530" width="204" height="120" rx="12" fill="#fff" stroke="#e5e5e5" stroke-width="1"/>
+  <rect x="911" y="530" width="204" height="4" rx="2" fill="#7c3aed"/>
+  <text x="1013" y="572" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🔧</text>
+  <text x="1013" y="596" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#111" text-anchor="middle">Piping Systems</text>
+  <text x="1013" y="613" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">High Pressure &amp; Temperature</text>
+
+  <!-- FOOTER strip -->
+  <rect x="55" y="667" width="1080" height="98" fill="#0a0a0a"/>
+  <line x1="55" y1="667" x2="1135" y2="667" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="90" y="697" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#fff">K-FAB</text>
+  <text x="90" y="714" font-family="Arial, sans-serif" font-size="9" fill="#555" letter-spacing="1">INDUSTRIAL FABRICATION</text>
+  <text x="90" y="748" font-family="Arial, sans-serif" font-size="9" fill="#333">© 2024 K-FAB Engineering. All Rights Reserved.</text>
+  <text x="880" y="700" font-family="Arial, sans-serif" font-size="10" fill="#555">Privacy Policy</text>
+  <text x="980" y="700" font-family="Arial, sans-serif" font-size="10" fill="#555">Terms of Service</text>
+  <text x="1080" y="700" font-family="Arial, sans-serif" font-size="10" fill="#555">Contact</text>
+  <text x="880" y="740" font-family="Arial, sans-serif" font-size="9" fill="#333">Designed &amp; Built by Primity R&amp;D Labs</text>
+
+  <!-- Outer label -->
+  <text x="600" y="832" font-family="Arial, sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="3" font-weight="700">WEBSITE DESIGN &amp; DEVELOPMENT</text>
+  <text x="600" y="854" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle" letter-spacing="2">K-FAB INDUSTRIAL · CORPORATE DIGITAL SHOWCASE</text>
+</svg>

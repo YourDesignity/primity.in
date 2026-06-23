@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Work — Primity R&D Labs | Selected Projects &amp; Case Studies</title>
+  <meta name="description" content="Explore Primity R&D Labs selected work — enterprise ERP systems, telemedicine platforms, and AI-powered digital products."/>
+  <link rel="canonical" href="https://designity.in/work"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,700;0,900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <style>
+    .work-page{min-height:100vh;padding:13rem 5rem 8rem;background:#0a0a0a;color:#fff;}
+    @media(max-width:768px){.work-page{padding:10rem 1.5rem 6rem;}}
+    .work-h1{font-size:clamp(4rem,9vw,9rem);font-weight:900;letter-spacing:-.04em;line-height:.85;}
+    .work-header{display:flex;align-items:flex-end;justify-content:space-between;gap:3rem;flex-wrap:wrap;margin-bottom:10rem;}
+    .work-header-sub{max-width:28rem;color:#888;font-size:1.5rem;font-weight:300;line-height:1.7;padding-bottom:1rem;}
+    /* DESTINY FLAGSHIP */
+    .flagship{margin-bottom:10rem;padding-top:2.5rem;border-top:1px solid #333;}
+    .flagship-meta{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:3rem;}
+    .flagship-title{font-size:clamp(3rem,8vw,8rem);font-weight:900;letter-spacing:-.04em;}
+    .flagship-quote p:first-child{color:#888;font-size:1.25rem;font-style:italic;font-weight:300;margin-bottom:1rem;}
+    .flagship-quote p:last-child{color:rgba(255,255,255,.8);font-size:1.125rem;font-weight:300;line-height:1.7;}
+    .destiny-card{display:block;width:100%;height:60vh;background:#0c0c0c;border:1px solid rgba(227,51,36,.3);border-radius:3rem;overflow:hidden;position:relative;box-shadow:0 0 60px rgba(227,51,36,.08);transition:box-shadow .7s,border-color .7s;}
+    @media(max-width:768px){.destiny-card{height:40vh;border-radius:1.5rem;}}
+    .destiny-card:hover{box-shadow:0 0 80px rgba(227,51,36,.15);border-color:rgba(227,51,36,.6);}
+    .destiny-card img{width:100%;height:100%;object-fit:cover;transition:transform 2.5s cubic-bezier(.25,1,.5,1);}
+    .destiny-card:hover img{transform:scale(1.05);}
+    .destiny-overlay{position:absolute;inset:0;background:rgba(0,0,0,.3);transition:background .7s;}
+    .destiny-card:hover .destiny-overlay{background:rgba(0,0,0,.1);}
+    .destiny-hover-pill{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.7);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);padding:1.25rem 2rem;border-radius:999px;display:flex;align-items:center;gap:1rem;opacity:0;transition:opacity .5s;z-index:20;}
+    .destiny-card:hover .destiny-hover-pill{opacity:1;}
+    .destiny-status{position:absolute;bottom:2.5rem;left:2.5rem;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);border:1px solid rgba(227,51,36,.5);padding:1.5rem 2rem;border-radius:1rem;z-index:20;}
+    .destiny-status p:first-child{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#e33324;margin-bottom:.5rem;}
+    .destiny-status p:last-child{font-size:clamp(1.5rem,3vw,2.5rem);font-weight:700;letter-spacing:-.03em;}
+    /* PROJECT ITEMS */
+    .projects-list{display:flex;flex-direction:column;gap:10rem;}
+    .project-visual{display:block;width:100%;height:60vh;background:#0c0c0c;border:1px solid #222;border-radius:3rem;overflow:hidden;position:relative;margin-bottom:3rem;transition:border-color .5s;}
+    @media(max-width:768px){.project-visual{height:40vh;border-radius:1.5rem;}}
+    .project-visual:hover{border-color:#444;}
+    .project-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 2.5s cubic-bezier(.25,1,.5,1);}
+    .project-visual:hover img{transform:scale(1.05);}
+    .project-hover-pill{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;color:#000;padding:.75rem 1.5rem;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;opacity:0;transition:opacity .3s;pointer-events:none;z-index:30;white-space:nowrap;box-shadow:0 10px 40px rgba(0,0,0,.5);}
+    .project-visual:hover .project-hover-pill{opacity:1;}
+    .project-stat{position:absolute;bottom:2.5rem;left:2.5rem;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1);padding:1.5rem 2rem;border-radius:1rem;z-index:20;transition:border-color .5s;}
+    .project-visual:hover .project-stat{border-color:rgba(255,255,255,.3);}
+    .project-stat p:first-child{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#e33324;margin-bottom:.5rem;}
+    .project-stat p:last-child{font-size:clamp(1.5rem,3vw,2.5rem);font-weight:700;letter-spacing:-.03em;}
+    .project-details{display:grid;grid-template-columns:7fr 5fr;gap:2rem 4rem;padding:0 1rem;}
+    @media(max-width:768px){.project-details{grid-template-columns:1fr;}}
+    .project-name-row{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;}
+    .project-dot{width:1rem;height:1rem;background:#e33324;border-radius:50%;flex-shrink:0;}
+    .project-name{font-size:clamp(2.5rem,6vw,7rem);font-weight:700;letter-spacing:-.04em;}
+    .project-sub{font-size:clamp(1.5rem,3vw,2.5rem);color:#fff;font-weight:300;letter-spacing:-.02em;}
+    /* CTA */
+    .work-cta{margin-top:10rem;position:relative;overflow:hidden;background:#111;border:1px solid #222;border-radius:5rem;padding:8rem 1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center;}
+    .work-cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;max-width:28rem;height:16rem;background:#fff;opacity:.03;filter:blur(100px);border-radius:50%;}
+    .work-cta:hover .work-cta-glow{opacity:.06;}
+  </style>
+</head>
+<body>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div><div class="noise-overlay"></div>
+  <nav class="main-nav">
+    <a href="../index.html" class="nav-logo white">Primity R&amp;D Labs<span class="dot">.</span></a>
+    <div class="nav-pill"><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html" class="active">Work</a><a href="contact.html" class="nav-cta">Let's Talk</a></div>
+    <button class="ham-btn white" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu"><nav><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html" class="active">Work</a><a href="contact.html" class="cta">Let's Talk</a></nav><div class="menu-footer"><p>Primity R&amp;D Labs · Kerala, India</p><a href="mailto:reachoutprimity@gmail.com">reachoutprimity@gmail.com</a></div></div>
+
+  <main><div class="work-page">
+
+    <div class="work-header reveal">
+      <h1 class="work-h1">Selected<br>Work<span style="color:#e33324;">.</span></h1>
+      <p class="work-header-sub">A curated selection of our finest enterprise platforms, digital products, and successful startup partnerships.</p>
+    </div>
+
+    <!-- DESTINY FLAGSHIP -->
+    <div class="flagship reveal">
+      <div class="flagship-meta">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;">
+            <span style="width:12px;height:12px;background:#e33324;border-radius:50%;box-shadow:0 0 15px #e33324;" class="animate-pulse"></span>
+            <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#e33324;">Flagship Project • 14 Years in the Making</span>
+          </div>
+          <h2 class="flagship-title">Destiny<span style="color:#e33324;">.</span></h2>
+        </div>
+        <div class="flagship-quote" style="max-width:28rem;">
+          <p>"I'm just an extension with goals aligned with yours." <br>— Your Destiny</p>
+          <p>Born from 14 years of rigorous Research &amp; Development, Destiny is our major autonomous AI initiative from our R&amp;D Labs.</p>
+        </div>
+      </div>
+      <a href="https://github.com/Our-Destiny" target="_blank" rel="noopener noreferrer" class="destiny-card">
+        <img src="https://raw.githubusercontent.com/Our-Destiny-R-D-Labs/.github/main/profile/assets/ORDRLabsWall.png" alt="Destiny Major Project" loading="lazy"/>
+        <div class="destiny-overlay"></div>
+        <div class="destiny-hover-pill">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span style="color:#fff;font-weight:700;font-size:.875rem;letter-spacing:.1em;text-transform:uppercase;">Explore Repository</span>
+        </div>
+        <div class="destiny-status"><p>Project Status</p><p>Active R&amp;D</p></div>
+      </a>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="projects-list">
+
+      <!-- Montreal -->
+      <div class="reveal">
+        <a href="work/montreal-internationals.html" class="project-visual">
+          <img src="../img/montreal-2.png" alt="Montreal Internationals" loading="lazy"/>
+          <div class="project-hover-pill">View Case Study</div>
+          <div class="project-stat"><p>Key Result</p><p>40% Efficiency</p></div>
+        </a>
+        <div class="project-details">
+          <div>
+            <div class="project-name-row"><span class="project-dot"></span><h3 class="project-name">Montreal Internationals</h3></div>
+            <p class="project-sub">Enterprise ERP System</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:2rem;margin-top:1.5rem;">
+            <p style="font-size:1.125rem;color:#888;line-height:1.7;">A complete overhaul of their legacy system, bringing real-time analytics, automated reporting, and seamless cloud integration.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.75rem;">
+              <span style="padding:.75rem 1.5rem;border-radius:999px;border:1px solid #333;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#888;">FinTech &amp; Operations</span>
+              <a href="work/montreal-internationals.html" class="tag tag-red" style="padding:.75rem 1.5rem;">Read Case Study ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- K-FAB -->
+      <div class="reveal">
+        <a href="https://www.kfab.in/" target="_blank" rel="noopener noreferrer" class="project-visual" style="background:#0c0c0c;">
+          <img src="../img/Kfab-cover.png" alt="K-FAB" loading="lazy"/>
+          <div class="project-hover-pill">Visit Live Site</div>
+          <div class="project-stat"><p>Key Result</p><p>Digital Transformation</p></div>
+        </a>
+        <div class="project-details">
+          <div>
+            <div class="project-name-row"><span class="project-dot"></span><h3 class="project-name">K-FAB</h3></div>
+            <p class="project-sub">Corporate Digital Showcase</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:2rem;margin-top:1.5rem;">
+            <p style="font-size:1.125rem;color:#888;line-height:1.7;">A sleek, high-performance digital presence engineered to showcase K-FAB's advanced industrial fabrication capabilities, heavy engineering portfolio, and manufacturing excellence.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.75rem;">
+              <span style="padding:.75rem 1.5rem;border-radius:999px;border:1px solid #333;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#888;">Web Development &amp; Branding</span>
+              <a href="https://www.kfab.in/" target="_blank" rel="noopener noreferrer" class="tag tag-red" style="padding:.75rem 1.5rem;">Live Site ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="work-cta reveal">
+      <div class="work-cta-glow"></div>
+      <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:#888;margin-bottom:2rem;position:relative;z-index:10;">Start A Project</p>
+      <h3 style="font-size:clamp(3rem,7vw,8rem);font-weight:900;letter-spacing:-.04em;line-height:.9;margin-bottom:3rem;max-width:64rem;position:relative;z-index:10;">Let's build something <span style="color:#888;">extraordinary.</span></h3>
+      <a href="contact.html" class="btn-outline-dark" style="font-size:12px;padding:1.25rem 2.5rem;position:relative;z-index:10;">Start the conversation</a>
+    </div>
+
+  </div></main>
+
+  <footer class="site-footer"><div class="footer-top"><div><h2 class="footer-name">PRIMITY R&amp;D LABS<span class="dot">.</span></h2><p class="footer-tagline">First in Ideas. Prime in Execution. Always.</p></div><div class="footer-contact"><a href="mailto:reachoutprimity@gmail.com">reachoutprimity@gmail.com</a><p>Kerala, India</p></div></div><div class="footer-bottom"><p class="footer-copy">© <span class="js-year"></span> PRIMITY R&amp;D LABS. All Rights Reserved.</p><div class="footer-social"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Twitter</a></div></div></footer>
+  <script src="../assets/js/main.js"></script>
+</body></html>
