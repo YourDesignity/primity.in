@@ -1,438 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Primity R&D Labs — First in Ideas, Prime in Execution | Software Development Agency</title>
-  <meta name="description" content="Primity R&D Labs — First in Ideas, Prime in Execution. Premium software development agency in Kerala, India."/>
-  <link rel="canonical" href="https://designity.in/"/>
-  <meta property="og:title" content="Primity R&D Labs — First in Ideas, Prime in Execution"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/main.css"/>
-  <style>
-    /* ── HOME PAGE STYLES ── */
-    .hero { position:relative; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; text-align:center; padding:10rem 2rem 12rem; background:#f5f5f3; overflow:hidden; }
-    /* Ink-drop particle canvas — full hero, behind all content */
-    #threads-container {
-      position:absolute;
-      top:0; left:0; right:0; bottom:0;
-      width:100%; height:100%;
-      pointer-events:none;
-      z-index:1;
-      overflow:hidden;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Primity R&D Labs — Where Applied Engineering Meets Advanced Research | A Venture of Our Destiny</title>
+    <meta name="description" content="Primity R&D Labs — a research and development lab and a venture of Our Destiny. We build custom business and engineering systems while advancing applied research. Kerala, India." />
+    <meta name="keywords" content="software development agency, enterprise web applications, AI data annotation, mobile app development, UI UX design, Kerala India, B2B tech partnerships, computer vision, Primity R&D Labs" />
+    <meta name="author" content="Primity R&D Labs" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://primity.in/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://primity.in/" />
+    <meta property="og:site_name" content="Primity R&D Labs" />
+    <meta property="og:title" content="Primity R&D Labs — Where Applied Engineering Meets Advanced Research" />
+    <meta property="og:description" content="A research and development lab and a venture of Our Destiny, building real systems and advancing applied research." />
+    <meta property="og:image" content="https://primity.in/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Primity R&D Labs — Where Applied Engineering Meets Advanced Research" />
+    <meta name="twitter:description" content="A research & development lab. Kerala, India." />
+    <meta name="twitter:image" content="https://primity.in/og-image.png" />
+
+    <!-- Geo -->
+    <meta name="geo.region" content="IN-KL" />
+    <meta name="theme-color" content="#f5f5f3" />
+
+    <!-- PWA — both standards -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Primity" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!--
+      PERFORMANCE: Fonts in <head> — fetched parallel with JS bundle.
+      Dancing Script ready before React boots → no FOUT in preloader.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Primity R&D Labs",
+      "url": "https://primity.in",
+      "logo": "https://primity.in/favicon.svg",
+      "description": "A research and development lab and a venture of Our Destiny.",
+      "foundingLocation": { "@type": "Place", "name": "Kerala, India" },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "reachoutprimity@gmail.com",
+        "contactType": "customer support",
+        "areaServed": "Worldwide"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/primityrdlabs",
+        "https://instagram.com/primityrdlabs"
+      ]
     }
-    #threads-container canvas {
-      position:absolute;
-      top:0; left:0;
-      width:100% !important;
-      height:100% !important;
+    </script>
+
+    <!-- Schema.org: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Primity R&D Labs",
+      "url": "https://primity.in"
     }
-    .hero-label, .hero-h1, .hero-sub, .hero-btns,
-    .hero-bottom, .hero-badge, .hero-divider {
-      position:relative;
-      z-index:10;
-    }
-    .hero-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.4em; color:#999; margin-bottom:2.5rem; position:relative; z-index:10; }
-    .hero-h1 { font-size:clamp(2.8rem,7.5vw,8rem); font-weight:900; letter-spacing:-.025em; line-height:1.05; color:#0a0a0a; position:relative; z-index:10; margin-bottom:3rem; display:block; width:100%; }
-    .hero-sub { position:relative; z-index:10; font-size:clamp(.875rem,1.2vw,1rem); color:#888; font-weight:300; max-width:22rem; line-height:1.8; margin-bottom:3rem; }
-    .hero-btns { position:relative; z-index:20; display:flex; gap:.75rem; flex-wrap:wrap; justify-content:center; }
-    .hero-bottom { position:absolute; bottom:4rem; left:0; right:0; display:flex; flex-direction:column; align-items:center; gap:.375rem; z-index:10; }
-    .hero-bottom p { font-size:.875rem; font-weight:700; color:#0a0a0a; }
-    .hero-bottom p:nth-child(2) { color:#b0b0b0; font-weight:300; }
-    .hero-bottom p:nth-child(3) { color:#ccc; font-weight:300; }
-    .hero-bottom p:nth-child(4) { color:#e0e0e0; font-weight:300; }
-    .hero-badge { position:absolute; bottom:2rem; right:2rem; display:none; align-items:center; gap:.625rem; padding:.5rem 1rem; border-radius:999px; border:1px solid #d8d8d8; background:rgba(255,255,255,.7); backdrop-filter:blur(4px); z-index:10; }
-    @media(min-width:768px){ .hero-badge{display:flex;} }
-    .hero-badge span:first-child { width:8px; height:8px; border-radius:50%; background:#22c55e; }
-    .hero-badge p { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.2em; color:#0a0a0a; }
-    .hero-divider { position:absolute; bottom:0; left:2rem; right:2rem; height:1px; background:#e4e4e4; z-index:10; }
-    /* SECTIONS */
-    .page-bg { background:#f5f5f3; color:#0a0a0a; }
-    .section-experience { padding:8rem 5rem 0; }
-    @media(max-width:768px){ .section-experience{padding:6rem 1.5rem 0;} }
-    .h-giant { font-size:clamp(3.5rem,10vw,10rem); font-weight:900; letter-spacing:-.05em; line-height:.88; color:#0a0a0a; }
-    .section-experience-row { display:flex; align-items:flex-end; justify-content:space-between; gap:2rem; flex-wrap:wrap; padding-bottom:5rem; border-bottom:1px solid #e8e8e8; margin-top:2.5rem; }
-    .section-experience-row p { font-size:clamp(1rem,1.3vw,1.125rem); color:#777; font-weight:300; max-width:28rem; line-height:1.8; }
-    /* DELIVERED */
-    .section-delivered { padding:3rem 5rem 5rem; }
-    @media(max-width:768px){ .section-delivered{padding:2rem 1.5rem 4rem;} }
-    .delivered-dark { width:100%; background:#111; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; border-radius:1rem; min-height:clamp(260px,40vw,500px); }
-    .delivered-glow { position:absolute; bottom:-10%; right:10%; width:30%; height:60%; background:#e33324; opacity:.08; filter:blur(80px); border-radius:50%; }
-    .delivered-text { text-align:center; position:relative; z-index:10; padding:2rem; }
-    .delivered-text p { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.3em; color:#555; margin-bottom:1rem; }
-    .delivered-h { font-size:clamp(2.8rem,8vw,8rem); line-height:.9; }
-    .delivered-h em { font-style:italic; font-weight:300; color:#fff; display:block; }
-    .delivered-h strong { font-weight:900; color:#fff; display:block; }
-    .delivered-cta-row { padding:4rem 0; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap; border-bottom:1px solid #e8e8e8; }
-    .delivered-cta-text p:first-child { font-size:.875rem; font-weight:700; margin-bottom:.5rem; }
-    .delivered-cta-text p:last-child { font-size:.875rem; color:#888; font-weight:300; line-height:1.7; max-width:18rem; }
-    /* AI LABS */
-    .section-ailabs { padding:6rem 5rem 9rem; position:relative; }
-    @media(max-width:768px){ .section-ailabs{padding:4rem 1.5rem 6rem;} }
-    .ailabs-bg { position:absolute; top:50%; left:0; transform:translateY(-50%); font-size:clamp(6rem,20vw,18rem); font-weight:900; letter-spacing:-.05em; color:rgba(10,10,10,.035); white-space:nowrap; pointer-events:none; user-select:none; }
-    .ailabs-row { position:relative; z-index:10; display:flex; align-items:flex-end; justify-content:space-between; gap:2.5rem; flex-wrap:wrap; }
-    .ailabs-h2 { font-size:clamp(2.2rem,5.5vw,5rem); font-weight:900; letter-spacing:-.04em; line-height:.95; margin-bottom:1.5rem; }
-    .ailabs-stat { text-align:right; display:none; }
-    @media(min-width:768px){ .ailabs-stat{display:block;} }
-    .ailabs-stat strong { font-size:clamp(4rem,10vw,9rem); font-weight:900; letter-spacing:-.05em; line-height:1; display:block; }
-    .ailabs-stat span { font-size:.875rem; color:#aaa; font-weight:300; letter-spacing:.1em; text-transform:uppercase; }
-    .ailabs-tags { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2rem; }
-    /* STORY */
-    .section-story { background:#fff; padding:7rem 5rem 9rem; border-top:1px solid #eee; border-bottom:1px solid #eee; }
-    @media(max-width:768px){ .section-story{padding:5rem 1.5rem 6rem;} }
-    .story-grid { display:flex; gap:5rem 6rem; flex-wrap:wrap; }
-    .story-left { flex:1; min-width:280px; }
-    .story-right { flex:1; min-width:280px; display:flex; flex-direction:column; gap:1rem; }
-    .story-h2 { font-size:clamp(2rem,4.5vw,4rem); font-weight:900; letter-spacing:-.04em; line-height:1.05; margin-bottom:1.5rem; }
-    .story-h2 em { font-style:italic; font-weight:300; color:#ccc; }
-    .story-link { display:inline-flex; align-items:center; gap:1rem; margin-top:2rem; }
-    .story-link-text { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.22em; color:#0a0a0a; transition:color .3s; }
-    .story-link:hover .story-link-text { color:#999; }
-    .story-line { width:3rem; height:1px; background:#ddd; position:relative; overflow:hidden; }
-    .story-line::after { content:''; position:absolute; inset:0; background:#0a0a0a; transform:translateX(-100%); transition:transform .5s; }
-    .story-link:hover .story-line::after { transform:translateX(0); }
-    .story-card { padding:2rem; border-radius:1rem; }
-    .story-card-dark { background:#0a0a0a; position:relative; overflow:hidden; }
-    .story-card-dark::before { content:''; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,rgba(227,51,36,.3),transparent); }
-    .story-card-light { background:#f0f0ee; }
-    /* WORK GRID */
-    .section-work { padding:7rem 5rem 10rem; }
-    @media(max-width:768px){ .section-work{padding:5rem 1.5rem 7rem;} }
-    .work-header { display:flex; align-items:flex-end; justify-content:space-between; gap:1.25rem; flex-wrap:wrap; margin-bottom:3rem; }
-    .work-header h2 { font-size:clamp(2.5rem,6vw,5.5rem); font-weight:900; letter-spacing:-.04em; line-height:.9; }
-    .work-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
-    @media(max-width:768px){ .work-grid{grid-template-columns:1fr;} }
-    .work-card { display:block; border-radius:1rem; overflow:hidden; aspect-ratio:4/3; position:relative; }
-    .work-card:nth-child(2) { margin-top:2.5rem; }
-    @media(max-width:768px){ .work-card:nth-child(2){margin-top:0;} }
-    .work-card img, .work-card .work-card-bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 2.5s cubic-bezier(.25,1,.5,1); }
-    .work-card:hover img, .work-card:hover .work-card-bg { transform:scale(1.04); }
-    .work-card-placeholder { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
-    .work-card-placeholder span { font-size:8rem; font-weight:900; color:rgba(0,0,0,.05); letter-spacing:-.05em; user-select:none; }
-    .work-stat { position:absolute; top:1rem; right:1rem; padding:.375rem .875rem; border-radius:999px; background:rgba(255,255,255,.8); backdrop-filter:blur(4px); font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:#000; z-index:10; }
-    /* FAQ */
-    .section-faq { padding:7rem 5rem 10rem; border-top:1px solid #e8e8e8; }
-    @media(max-width:768px){ .section-faq{padding:5rem 1.5rem 7rem;} }
-    .faq-heading { font-size:clamp(2.5rem,6.5vw,5.5rem); font-weight:900; letter-spacing:-.04em; line-height:1; margin-bottom:.75rem; }
-    .faq-sub { font-size:.875rem; color:#aaa; font-weight:300; margin-bottom:6rem; }
-    .faq-list { max-width:42rem; margin:0 auto; }
-    .faq-item { border-bottom:1px solid #eee; }
-    .faq-q { display:flex; align-items:center; justify-content:space-between; gap:2rem; padding:1.25rem 0; }
-    .faq-q p { font-size:.875rem; font-weight:700; color:#0a0a0a; flex:1; }
-    .faq-q .faq-icon { font-size:1.125rem; color:#ccc; font-weight:300; transition:transform .3s; }
-    .faq-item.open .faq-icon { transform:rotate(45deg); }
-    .faq-ans-desktop { flex:1; text-align:right; font-size:.875rem; color:#888; font-weight:300; line-height:1.8; }
-    @media(max-width:767px){ .faq-ans-desktop{display:none;} }
-    .faq-ans-mobile { max-height:0; overflow:hidden; transition:max-height .4s cubic-bezier(.16,1,.3,1); }
-    .faq-ans-mobile p { font-size:.875rem; color:#888; font-weight:300; line-height:1.8; padding-bottom:1.25rem; }
-    @media(min-width:768px){ .faq-ans-mobile{display:none;} }
-    /* CTA BLOCK */
-    .cta-block { margin-top:7rem; text-align:center; }
-    .cta-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.35em; color:#bbb; margin-bottom:1.25rem; }
-    .cta-h2 { font-size:clamp(2rem,4.5vw,4rem); font-weight:900; letter-spacing:-.04em; line-height:1.05; max-width:48rem; margin:0 auto 2rem; }
-    /* TEAM */
-    .section-team { background:#fff; padding:6rem 5rem 9rem; border-top:1px solid #e8e8e8; }
-    @media(max-width:768px){ .section-team{padding:5rem 1.5rem 6rem;} }
-    .team-heading { font-size:clamp(2rem,5vw,4rem); font-weight:900; color:#0a0a0a; text-align:center; }
-    .team-sub { font-size:.875rem; color:#999; margin-top:.75rem; text-align:center; }
-    .team-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2.5rem; max-width:56rem; margin:4rem auto 0; }
-    @media(max-width:768px){ .team-grid{grid-template-columns:1fr 1fr;} }
-    .team-card { display:flex; flex-direction:column; align-items:center; text-align:center; }
-    .team-avatar { width:11rem; height:11rem; border-radius:50%; overflow:hidden; margin-bottom:1rem; border:2px solid #e8e8e8; transition:border-color .4s; }
-    .team-card:hover .team-avatar { border-color:#e33324; }
-    .team-avatar img { width:100%; height:100%; object-fit:cover; object-position:top; opacity:.8; transition:opacity .4s; }
-    .team-card:hover .team-avatar img { opacity:1; }
-    .team-avatar-fallback { width:100%; height:100%; background:#0a0a0a; display:flex; align-items:center; justify-content:center; }
-    .team-avatar-fallback span { font-size:1.875rem; font-weight:700; color:#fff; }
-    .team-name { font-size:1rem; font-weight:700; color:#0a0a0a; }
-    .team-role { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.18em; color:#e33324; margin-top:.25rem; }
-  </style>
-</head>
-<body>
-  <!-- PRELOADER -->
-  <div id="preloader">
-    <div style="display:flex;flex-direction:column;align-items:center;gap:1.5rem;">
-      <div class="cursive-word">
-        <span class="ink-sleeve" style="animation-delay:.08s">P</span><span class="ink-sleeve" style="animation-delay:.17s">r</span><span class="ink-sleeve" style="animation-delay:.26s">i</span><span class="ink-sleeve" style="animation-delay:.35s">m</span><span class="ink-sleeve" style="animation-delay:.44s">i</span><span class="ink-sleeve" style="animation-delay:.53s">t</span><span class="ink-sleeve" style="animation-delay:.62s">y</span><span class="ink-sleeve" style="animation-delay:.71s"><span class="cursive-dot">.</span></span>
-      </div>
-      <p class="preloader-tagline">First in Ideas. Prime in Execution.</p>
-    </div>
-    <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
-  </div>
-  <div class="cursor-dot"></div><div class="cursor-ring"></div>
-  <div class="noise-overlay"></div>
-
-  <!-- NAVBAR -->
-  <nav class="main-nav">
-    <a href="index.html" class="nav-logo">Primity R&amp;D Labs<span class="dot">.</span></a>
-    <div class="nav-pill">
-      <a href="pages/about.html">About</a>
-      <a href="pages/services.html">Services</a>
-      <a href="pages/work.html">Work</a>
-      <a href="pages/contact.html" class="nav-cta">Let's Talk</a>
-    </div>
-    <button class="ham-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </nav>
-  <div class="mobile-menu">
-    <nav>
-      <a href="pages/about.html">About</a>
-      <a href="pages/services.html">Services</a>
-      <a href="pages/work.html">Work</a>
-      <a href="pages/contact.html" class="cta">Let's Talk</a>
-    </nav>
-    <div class="menu-footer">
-      <p>Primity R&amp;D Labs · Kerala, India</p>
-      <a href="mailto:reachoutprimity@gmail.com">reachoutprimity@gmail.com</a>
-    </div>
-  </div>
-
-  <main class="page-bg">
-
-    <!-- 1. HERO -->
-    <section class="hero">
-      <div id="threads-container" data-color-r="0.06" data-color-g="0.06" data-color-b="0.06" data-amplitude="1.2" data-distance="0.3"></div>
-      <p class="hero-label reveal">Software Development Agency</p>
-      <div class="reveal" style="position:relative;z-index:10;width:100%;margin-bottom:3rem;">
-        <h1 class="hero-h1">First in Ideas.</h1>
-        <h1 class="hero-h1">Prime in Execution.</h1>
-      </div>
-      <p class="hero-sub reveal">We believe great software should be designed with precision and purpose.</p>
-      <div class="hero-btns reveal">
-        <a href="pages/about.html" class="btn-outline">Learn More</a>
-        <a href="pages/contact.html" class="btn-primary">Let's Talk</a>
-      </div>
-      <div class="hero-bottom">
-        <p>One agency. Infinite possibilities.</p>
-        <p>A partnership that gets better and better.</p>
-        <p>Delivered with precision.</p>
-        <p>Built for ambitious businesses.</p>
-      </div>
-      <div class="hero-badge">
-        <span class="animate-pulse"></span>
-        <p>Open for B2B Partnerships</p>
-      </div>
-      <div class="hero-divider"></div>
-    </section>
-
-    <!-- 2. TICKER -->
-    <div class="ticker-wrap">
-      <div class="ticker-track">
-        <span>High-Fidelity Data Annotation</span><span>—</span><span>B2B Strategic Partnerships</span><span>—</span><span>AI Model Training</span><span>—</span><span>Computer Vision</span><span>—</span><span>Enterprise Software</span><span>—</span><span>Edge AI Optimization</span><span>—</span>
-        <span>High-Fidelity Data Annotation</span><span>—</span><span>B2B Strategic Partnerships</span><span>—</span><span>AI Model Training</span><span>—</span><span>Computer Vision</span><span>—</span><span>Enterprise Software</span><span>—</span><span>Edge AI Optimization</span><span>—</span>
-      </div>
-    </div>
-
-    <!-- 3. EXPERIENCE OUR PREMIUM SOFTWARE -->
-    <section class="section-experience">
-      <p class="reveal" style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:#bbb;margin-bottom:1rem;">Experience Our</p>
-      <div class="reveal">
-        <h2 class="h-giant">Premium</h2>
-        <h2 class="h-giant" style="margin-bottom:0;">Software.</h2>
-      </div>
-      <div class="section-experience-row reveal">
-        <p>We are a premium software development agency. We combine design thinking with technical excellence to architect scalable solutions that drive real business growth.</p>
-        <a href="pages/services.html" class="btn-outline">Our Capabilities</a>
-      </div>
-    </section>
-
-    <!-- 4. INSTANTLY DELIVERED -->
-    <section class="section-delivered">
-      <div class="delivered-dark reveal">
-        <div class="delivered-glow"></div>
-        <div class="delivered-text">
-          <p>Every single project</p>
-          <h2 class="delivered-h"><em>Instantly</em><strong>Delivered.</strong></h2>
-        </div>
-      </div>
-      <div class="delivered-cta-row reveal">
-        <div class="delivered-cta-text">
-          <p>Every. Single. Project.</p>
-          <p>Enjoy exclusive perks and benefits on every engagement. Trust built delivery by delivery.</p>
-        </div>
-        <a href="pages/contact.html" class="btn-primary" style="flex-shrink:0;">Get Started</a>
-      </div>
-    </section>
-
-    <!-- 5. AI LABS -->
-    <section class="section-ailabs">
-      <div class="ailabs-bg">AI Labs.</div>
-      <div class="ailabs-row">
-        <div style="max-width:32rem;">
-          <p class="reveal" style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:#bbb;margin-bottom:1.25rem;">New R&amp;D Division</p>
-          <h2 class="ailabs-h2 reveal">Our Destiny<br>Autonomous AI.</h2>
-          <p class="reveal" style="font-size:clamp(.875rem,1.2vw,1rem);color:#777;font-weight:300;line-height:1.8;max-width:22rem;margin-bottom:1.5rem;">
-            From 14 Years of R&amp;D to <strong>High-Fidelity Data Annotation</strong>, Computer Vision, and AI Model Training.
-          </p>
-          <div class="ailabs-tags reveal">
-            <span class="tag">2D/3D Bounding Boxes</span>
-            <span class="tag">LiDAR Point Cloud</span>
-            <span class="tag">RLHF for LLMs</span>
-            <span class="tag">Computer Vision</span>
-          </div>
-          <a href="pages/work/autonomous-ai-labs.html" class="btn-outline reveal">Explore Labs</a>
-        </div>
-        <div class="ailabs-stat reveal">
-          <strong>14</strong>
-          <span>Years of R&amp;D</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. STORY + CARDS -->
-    <section class="section-story">
-      <div class="story-grid">
-        <div class="story-left reveal">
-          <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:#bbb;margin-bottom:1.25rem;">Primity R&amp;D Labs Story</p>
-          <h2 class="story-h2">We don't just<br>write <em>code.</em></h2>
-          <p style="font-size:clamp(.875rem,1.2vw,1rem);color:#777;font-weight:300;line-height:1.8;max-width:22rem;margin-bottom:0;">
-            PRIMITY R&amp;D LABS combines design thinking with technical excellence to create software that solves real-world problems.
-          </p>
-          <a href="pages/about.html" class="story-link">
-            <span class="story-link-text">Read our full story</span>
-            <div class="story-line"></div>
-          </a>
-        </div>
-        <div class="story-right reveal">
-          <div class="story-card story-card-dark">
-            <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:#555;margin-bottom:.75rem;">Backed by</p>
-            <p style="font-size:1.125rem;font-weight:700;color:#fff;margin-bottom:.5rem;">14 Years of R&amp;D Excellence.</p>
-            <p style="font-size:.875rem;color:#666;font-weight:300;line-height:1.7;">Deep expertise in computer vision, sensor fusion, and enterprise architecture.</p>
-            <a href="pages/work/autonomous-ai-labs.html" style="margin-top:1.25rem;display:inline-flex;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:#555;border-bottom:1px solid #333;padding-bottom:2px;transition:color .3s,border-color .3s;">Learn More →</a>
-          </div>
-          <div class="story-card story-card-light">
-            <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:#bbb;margin-bottom:.75rem;">Got a question?</p>
-            <p style="font-size:1.125rem;font-weight:700;color:#0a0a0a;margin-bottom:.5rem;">We're here to help.</p>
-            <p style="font-size:.875rem;color:#888;font-weight:300;line-height:1.7;margin-bottom:1.25rem;">We respond to all inquiries within 24 hours. Reach out any time.</p>
-            <a href="pages/contact.html" class="btn-primary" style="padding:.625rem 1.25rem;font-size:10px;">Chat with us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. FEATURED WORK -->
-    <section class="section-work reveal">
-      <div class="work-header">
-        <div>
-          <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.3em;color:#bbb;margin-bottom:.75rem;">Our Work</p>
-          <h2>Featured<br>Work<span style="color:#ddd;">.</span></h2>
-        </div>
-        <p style="font-size:.875rem;color:#999;font-weight:300;max-width:18rem;line-height:1.7;">Enterprise platforms and design-driven digital products.</p>
-      </div>
-      <div class="work-grid">
-        <!-- Destiny AI -->
-        <a href="pages/work/destiny-ai-labs.html" class="work-card reveal" style="background:#0a0a0a;">
-          <img src="img/destiny-ai-rd-labs-cover.svg" alt="Destiny AI R&D Labs" loading="lazy"/>
-          <span class="work-stat">14 Yrs R&amp;D</span>
-        </a>
-        <!-- Aura Health -->
-        <a href="pages/work/aurahealth.html" class="work-card reveal" style="background:#0a1628;margin-top:2.5rem;">
-          <img src="img/work/aurahealth-cover.svg" alt="Aura Health Telemedicine Platform" loading="lazy"/>
-          <span class="work-stat">100k+ Users</span>
-        </a>
-        <!-- Nexus -->
-        <a href="pages/work/nexus.html" class="work-card reveal" style="background:#080808;">
-          <img src="img/work/nexus-cover.svg" alt="Nexus E-Commerce Platform" loading="lazy"/>
-          <span class="work-stat">$2M+ Monthly</span>
-        </a>
-        <!-- Lumina Edge -->
-        <a href="pages/work/luminaedge.html" class="work-card reveal" style="background:#060608;">
-          <img src="img/work/luminaedge-cover.svg" alt="Lumina Edge Digital Transformation" loading="lazy"/>
-          <span class="work-stat">Brand Relaunch</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- 8. FAQ + CTA -->
-    <section class="section-faq">
-      <div class="reveal" style="text-align:center;margin-bottom:6rem;">
-        <h2 class="faq-heading">In case you<br>missed anything.</h2>
-        <p class="faq-sub">Everything you need to know about working with Primity R&amp;D Labs.</p>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item animate-fadeup">
-          <div class="faq-q"><p>Where are you based?</p><span class="faq-ans-desktop">Kerala, India — we serve clients globally across all time zones.</span><span class="faq-icon">+</span></div>
-          <div class="faq-ans-mobile"><p>Kerala, India — we serve clients globally across all time zones.</p></div>
-        </div>
-        <div class="faq-item animate-fadeup" style="animation-delay:.06s">
-          <div class="faq-q"><p>What services do you offer?</p><span class="faq-ans-desktop">Full-stack development, AI data annotation, UI/UX design, mobile apps, and digital transformation consulting.</span><span class="faq-icon">+</span></div>
-          <div class="faq-ans-mobile"><p>Full-stack development, AI data annotation, UI/UX design, mobile apps, and digital transformation consulting.</p></div>
-        </div>
-        <div class="faq-item animate-fadeup" style="animation-delay:.12s">
-          <div class="faq-q"><p>How do I start a project?</p><span class="faq-ans-desktop">Reach out via our contact page. We'll schedule a call within 24 hours to understand your needs.</span><span class="faq-icon">+</span></div>
-          <div class="faq-ans-mobile"><p>Reach out via our contact page. We'll schedule a call within 24 hours to understand your needs.</p></div>
-        </div>
-        <div class="faq-item animate-fadeup" style="animation-delay:.18s">
-          <div class="faq-q"><p>What is Destiny AI Labs?</p><span class="faq-ans-desktop">Our R&amp;D arm focusing on high-fidelity data annotation, computer vision, and AI model training partnerships.</span><span class="faq-icon">+</span></div>
-          <div class="faq-ans-mobile"><p>Our R&amp;D arm focusing on high-fidelity data annotation, computer vision, and AI model training partnerships.</p></div>
-        </div>
-        <div class="faq-item animate-fadeup" style="animation-delay:.24s">
-          <div class="faq-q"><p>Do you work with startups?</p><span class="faq-ans-desktop">Absolutely. We work with startups, scale-ups, and enterprise businesses alike.</span><span class="faq-icon">+</span></div>
-          <div class="faq-ans-mobile"><p>Absolutely. We work with startups, scale-ups, and enterprise businesses alike.</p></div>
-        </div>
-      </div>
-      <div class="cta-block reveal">
-        <!-- Dark rounded CTA block matching React version -->
-        <div style="position:relative;overflow:hidden;background:#111;border:1px solid #222;border-radius:2.5rem;padding:5rem 2rem;display:flex;flex-direction:column;align-items:center;text-align:center;">
-          <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:32rem;height:16rem;background:#e33324;opacity:.08;filter:blur(100px);border-radius:50%;pointer-events:none;"></div>
-          <p class="cta-label" style="color:#e33324;position:relative;z-index:10;">Seeking Tech Partnerships</p>
-          <h2 class="cta-h2" style="color:#fff;position:relative;z-index:10;">Let's build digital experiences and AI solutions that define the future, together.</h2>
-          <a href="pages/contact.html" class="btn-primary" style="padding:1rem 3rem;position:relative;z-index:10;">Let's Talk</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. TEAM -->
-    <section class="section-team">
-      <h2 class="team-heading animate-fadeup">The Minds Behind It All.</h2>
-      <p class="team-sub animate-fadeup" style="animation-delay:.15s">Leadership and core team at Primity R&amp;D Labs. →</p>
-      <div class="team-grid">
-        <div class="team-card animate-fadeup">
-          <div class="team-avatar"><img src="img/team/Nithin.png" alt="Nithin KT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=team-avatar-fallback><span>NK</span></div>'"/></div>
-          <p class="team-name">Nithin KT</p><p class="team-role">Founder &amp; CEO</p>
-        </div>
-        <div class="team-card animate-fadeup" style="animation-delay:.08s">
-          <div class="team-avatar"><img src="img/team/Hariprasad.png" alt="Hariprasad" loading="lazy" onerror="this.parentNode.innerHTML='<div class=team-avatar-fallback><span>HP</span></div>'"/></div>
-          <p class="team-name">Hariprasad</p><p class="team-role">Director</p>
-        </div>
-        <div class="team-card animate-fadeup" style="animation-delay:.16s">
-          <div class="team-avatar"><img src="img/team/Abhinav.png" alt="Abhinav" loading="lazy" onerror="this.parentNode.innerHTML='<div class=team-avatar-fallback><span>AB</span></div>'"/></div>
-          <p class="team-name">Abhinav</p><p class="team-role">Co-Founder</p>
-        </div>
-        <div class="team-card animate-fadeup" style="animation-delay:.24s">
-          <div class="team-avatar"><img src="img/team/ABHIRAM.png" alt="Abhiram" loading="lazy" onerror="this.parentNode.innerHTML='<div class=team-avatar-fallback><span>AR</span></div>'"/></div>
-          <p class="team-name">Abhiram</p><p class="team-role">HR</p>
-        </div>
-        <div class="team-card animate-fadeup" style="animation-delay:.32s">
-          <div class="team-avatar"><img src="img/team/Devan.png" alt="Devan" loading="lazy" onerror="this.parentNode.innerHTML='<div class=team-avatar-fallback><span>DV</span></div>'"/></div>
-          <p class="team-name">Devan</p><p class="team-role">Manager</p>
-        </div>
-        <div class="team-card animate-fadeup" style="animation-delay:.40s">
-          <div class="team-avatar"><img src="img/team/team.png" alt="Our Team" loading="lazy" onerror="this.parentNode.innerHTML='<div class=team-avatar-fallback><span>★</span></div>'"/></div>
-          <p class="team-name">The Rest of</p><p class="team-role">Our Heroes</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div>
-        <h2 class="footer-name">PRIMITY R&amp;D LABS<span class="dot">.</span></h2>
-        <p class="footer-tagline">First in Ideas. Prime in Execution. Always.</p>
-      </div>
-      <div class="footer-contact">
-        <a href="mailto:reachoutprimity@gmail.com">reachoutprimity@gmail.com</a>
-        <p>Kerala, India</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">© <span class="js-year"></span> PRIMITY R&amp;D LABS. All Rights Reserved.</p>
-      <div class="footer-social"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Twitter</a></div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    </script>
+    <script type="module" crossorigin src="/assets/index-BXhVoZbO.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dfb-O2eS.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
